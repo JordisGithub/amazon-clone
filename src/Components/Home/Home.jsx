@@ -16,11 +16,11 @@ function Home() {
       <div className="home__row">
         <Product
           id="12321341"
-          title="Honest Beauty Eyeshadow Palette with 10 Pigment-Rich Shades | Paraben Free, Talc Free, Dermatologist Tested & Cruelty Free | 0.67 oz."
-          price={19.99}
+          title="Honeybee Gardens 'Skinny Dip' Refillable Eye Shadow Palette : Natural Ingredients : Gluten Free, Vegan, Paraben Free"
+          price={27.99}
           rating={4}
-          image="https://images-na.ssl-images-amazon.com/images/I/61uzVREFNqL._AC_SL1300_.jpg"
-          link="https://www.amazon.com/Honest-Beauty-Everything-Eyeshadow-Palette/dp/B07F4JJ8LH/ref=sr_1_1?dchild=1&keywords=Honest+Beauty+Eyeshadow+Palette+with+10+Pigment-Rich+Shades%7CParaben+Free&qid=1597631245&sr=8-1"
+          image="https://images-na.ssl-images-amazon.com/images/I/41xecyG-lbL.jpg"
+          link="https://www.amazon.com/Honeybee-Gardens-Skinny-Refillable-Palette/dp/B078P1QF2C/ref=sr_1_89?dchild=1&keywords=vegan+makeup&qid=1597628877&sr=8-89"
         />
 
         <Product
@@ -63,11 +63,11 @@ function Home() {
       <div className="home__row">
         <Product
           id="12321341"
-          title="Honeybee Gardens 'Skinny Dip' Refillable Eye Shadow Palette : Natural Ingredients : Gluten Free, Vegan, Paraben Free"
-          price={27.99}
+          title="Honest Beauty Eyeshadow Palette with 10 Pigment-Rich Shades | Paraben Free, Talc Free, Dermatologist Tested & Cruelty Free | 0.67 oz."
+          price={19.99}
           rating={4}
-          image="https://images-na.ssl-images-amazon.com/images/I/41xecyG-lbL.jpg"
-          link="https://www.amazon.com/Honeybee-Gardens-Skinny-Refillable-Palette/dp/B078P1QF2C/ref=sr_1_89?dchild=1&keywords=vegan+makeup&qid=1597628877&sr=8-89"
+          image="https://images-na.ssl-images-amazon.com/images/I/61uzVREFNqL._AC_SL1300_.jpg"
+          link="https://www.amazon.com/Honest-Beauty-Everything-Eyeshadow-Palette/dp/B07F4JJ8LH/ref=sr_1_1?dchild=1&keywords=Honest+Beauty+Eyeshadow+Palette+with+10+Pigment-Rich+Shades%7CParaben+Free&qid=1597631245&sr=8-1"
         />
       </div>
       {/* product */}
