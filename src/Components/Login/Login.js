@@ -6,73 +6,53 @@ import { auth } from "../../Services/firebase"
 
 function Login() {
   const history = useHistory();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState(""); // useState hook, it's like variables
+  const [password, setPassword] = useState("");
 
-
-  const login = event => {
-    event.preventDefault(); //this stops the refresh
-    //do the login logic...
-
+  const login = (event) => {
+    event.preventDefault(); // stops the default refreshing
     auth
-      .signInwithEmailAndPassword(email, password)
+      .signInWithEmailAndPassword(email, password)
       .then((auth) => {
-        //logen in, redirect to homepage...
-        history.push('./')
-      })
-      .catch((e) => alert(e.message));
-  };
-
-  const register = event => {
-    event.preventDefault(); //this stops the refresh
-    //do the register logic...
-    auth
-      .createUserWithEmailAndPassword(email, password)
-      .then(auth => {
-        //create a user and loggedin, redirect to homepage...
-        history.push('./')
+        history.push('/');
       })
       .catch((e) => alert(e.message));
   }
 
+  const register = (event) => {
+    event.preventDefault();
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        history.push('/');
 
-
+      })
+      .catch((e) => alert(e.message));
+  }
 
   return (
     <div className="login">
-      <Link to="/">
-
+      <Link to='/'>
         <img
           className="login__logo"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png"
           alt=""
         />
       </Link>
-
-
       <div className="login__container">
-        <h1>Sign In</h1>
-
+        <h1>Sign in</h1>
         <form>
           <h5>E-mail</h5>
-          <input
-            value={email}
-            type="email"
-            onChange={event => setEmail(event.target.value)}
-          />
+          <input value={email} onChange={event => setEmail(event.target.value)} type="email" />
           <h5>Password</h5>
-          <input
-            value={password}
-            type="password"
-            onChange={event => setPassword(event.target.value)}
-          />
-          <button onClick={Login} type="submit" className="login__signInButton">Sign In</button>
+          <input value={password} onChange={event => setPassword(event.target.value)} type="password" />
+          <button onClick={login} type="submit" className="login__signInButton">Sing in</button>
         </form>
-
-        <p>By signing-in you agree to Amazon's Conditions of Use and Sale. Please see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.</p>
-        <button onClick={register} className="login__registerButton">Create your Amazon Account</button>
+        <p>
+          By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.
+                </p>
+        <button onClick={register} className="login__registerButton">Create you Amazon account</button>
       </div>
-
     </div>
   )
 }
