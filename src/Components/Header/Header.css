@@ -1,6 +1,7 @@
 .header {
-  background: #131921;
+  background-color: #131921;
   display: flex;
+  /* divs inside are next to each other not underneath */
   align-items: center;
   position: sticky;
   top: 0;
@@ -9,8 +10,30 @@
 
 .header__logo {
   width: 100px;
+  margin: 18px 20px 0 20px;
+  /* top right bottom left */
   object-fit: contain;
-  margin: 18px 20px 0;
+  /* always look the same so that won't stretch strangly etc */
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+  /* it should use as much space as it can */
+}
+
+.header__searchIcon {
+  background-color: #cd9042;
+  padding: 5px;
+  height: 22px !important;
+  /* important to override preexisting height */
+}
+
+.header__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
 }
 
 .header__nav {
@@ -21,32 +44,12 @@
 .header__link {
   color: white;
   text-decoration: none;
-  align-items: center;
-}
-
-.header__optionBasket {
-  color: white;
-  text-decoration: none;
-  display: flex;
-  margin: 0 10px;
-  /* padding-left: 100px; */
-  align-items: center !important;
-}
-
-.header__basketCount {
-  font-size: 13px;
-  font-weight: 800;
-  margin: 0 10px;
 }
 
 .header__option {
-  color: white;
-  text-decoration: none;
-
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px;
 }
 
 .header__optionLineOne {
@@ -58,22 +61,11 @@
   font-weight: 800;
 }
 
-.header__search {
+.header__optionBasket {
   display: flex;
-  flex: 1;
-
-  /* align-items: center; */
+  align-items: center;
 }
 
-.header__searchInput {
-  height: 12px;
-  padding: 10px;
-  border: none;
-  width: 100%;
-}
-
-.header__searchIcon {
-  padding: 5px;
-  height: 22px !important;
-  background-color: #cd9042;
+.header__basketCount {
+  margin: 0 10px;
 }

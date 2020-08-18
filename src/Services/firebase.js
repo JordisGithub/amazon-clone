@@ -1,7 +1,7 @@
 import firebase from 'firebase';
 
 
-const firebase = firebase.initializeApp({
+const firebaseApp = firebase.initializeApp({
   apiKey: "AIzaSyAoVG3BJesrtjj3AI98Dn0yUUTOnlmztQg",
   authDomain: "clone-583ed.firebaseapp.com",
   databaseURL: "https://clone-583ed.firebaseio.com",
@@ -14,7 +14,7 @@ const firebase = firebase.initializeApp({
 
 });
 
-const db = firebaseApp.firebase();
+const db = firebaseApp.firestore();
 const auth = firebase.auth();
 
 export { auth };
