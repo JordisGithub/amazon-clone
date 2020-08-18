@@ -13,7 +13,7 @@ function Home() {
       />
 
       {/* product id, title, price, rating, image */}
-      <div className="home__row">
+      <div className="home__row home__row__two">
         <Product
           id="12321341"
           title="Honeybee Gardens 'Skinny Dip' Refillable Eye Shadow Palette : Natural Ingredients : Gluten Free, Vegan, Paraben Free"
@@ -33,7 +33,7 @@ function Home() {
         />
       </div>
 
-      <div className="home__row">
+      <div className="home__row home__row__three">
         <Product
           id="12321343"
           title="ZEESEA Picasso Matte Lipstick Cruelty Free and Vegan Long Lasting Moisturizing Non-Marking, Non-Stick Cup Waterproof Lips Makeup"

@@ -17,3 +17,42 @@
   z-index: -1;
   margin-bottom: -150px;
 }
+
+/* ====================================== */
+/* ====================================== */
+/* ====================================== */
+/* ----------- iPhone X ----------- */
+/* ====================================== */
+/* ====================================== */
+/* ====================================== */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 833px)
+
+/* and (-webkit-min-device-pixel-ratio: 3) */
+  {
+
+  .home {
+    width: 100vw;
+    margin-top: -12px;
+    flex-direction: column;
+  }
+
+  .home__row__two {
+    margin-top: 70px;
+  }
+
+  .home__row {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .home__image {
+    width: 100%;
+
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: -1;
+
+  }
+
+}
