@@ -1,11 +1,12 @@
-import './CheckoutProduct.css'
-
 import React from 'react'
+import './CheckoutProduct.css'
+import { useStateValue } from '../../Services/StateProvider'
 
 function CheckoutProduct({ id, title, image, price, rating }) {
   return (
     <div className="checkoutProduct">
       <img src={image} alt="" />
+
 
       <div className="checkoutProduct__info">
         <p className="checkoutProduct__title">{title}</p>
@@ -17,7 +18,7 @@ function CheckoutProduct({ id, title, image, price, rating }) {
 
         <div className="checkoutProduct__rating">
           {Array(rating)
-            .fill().map((_, i) => (
+            .fill().map((_) => (
               <p>⭐</p>
             ))}
         </div>

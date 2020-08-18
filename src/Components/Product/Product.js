@@ -4,7 +4,7 @@ import { useStateValue } from '../../Services/StateProvider'
 // import { Link } from 'react-router-dom'
 
 
-function Product({ id, title, image, price, rating, link }) {
+function Product({ id, title, image, price, rating }) {
 
   const [{ }, dispatch] = useStateValue();
 
@@ -16,8 +16,8 @@ function Product({ id, title, image, price, rating, link }) {
         title: title,
         image: image,
         price: price,
-        rating: rating,
-        link: link
+        rating: rating
+        // link: link
       }
     })
   };

@@ -1,5 +1,15 @@
 export const initialState = {
-  basket: [],
+  basket: [
+    {
+
+      id: "12321341",
+      title: "Honeybee Gardens 'Skinny Dip' Refillable Eye Shadow Palette : Natural Ingredients : Gluten Free, Vegan, Paraben Free",
+      price: 27.99,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/41xecyG-lbL.jpg",
+      link: "https://www.amazon.com/Honeybee-Gardens-Skinny-Refillable-Palette/dp/B078P1QF2C/ref=sr_1_89?dchild=1&keywords=vegan+makeup&qid=1597628877&sr=8-89"
+    },
+  ],
   user: null,
 };
 
@@ -10,7 +20,7 @@ const reducer = (state, action) => {
       // logic for adding item to basket
       return {
         ...state,
-        basket: [...state.basket, action.item]
+        basket: [...state.basket, action.item],
       };
 
     case "REMOVE_FROM_BASKET":
