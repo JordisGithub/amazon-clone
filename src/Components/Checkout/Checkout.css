@@ -15,3 +15,38 @@
   width: 100%;
   margin-bottom: 10px;
 }
+
+/* ====================================== */
+/* ====================================== */
+/* ====================================== */
+/* ----------- iPhone X ----------- */
+/* ====================================== */
+/* ====================================== */
+/* ====================================== */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 833px)
+
+/* and (-webkit-min-device-pixel-ratio: 3) */
+  {
+  .checkout {
+    /* display: flex; */
+    /* padding: 20px;
+      background-color: white;
+      height: max-content; */
+    flex-direction: column;
+  }
+
+  .checkout__title {
+    /* margin-right: 10px;
+      padding: 10px;
+      border-bottom: 1px solid lightgray; */
+  }
+
+  .checkout__ad {
+    /* width: 100%;
+      margin-bottom: 10px; */
+
+  }
+
+}
