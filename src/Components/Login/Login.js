@@ -11,21 +11,25 @@ function Login() {
 
   const login = (event) => {
     event.preventDefault(); // stops the default refreshing
+
     auth
       .signInWithEmailAndPassword(email, password)
-      .then((auth) => {
+      .then(auth => {
         history.push('/');
       })
+
       .catch((e) => alert(e.message));
   }
 
   const register = (event) => {
     event.preventDefault();
+
     auth
       .createUserWithEmailAndPassword(email, password)
       .then((auth) => {
-        history.push('/');
-
+        if (auth) {
+          history.push('/');
+        }
       })
       .catch((e) => alert(e.message));
   }

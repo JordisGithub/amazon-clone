@@ -29,7 +29,6 @@ const reducer = (state, action) => {
 
       // we cloned the basket
       let newBasket = [...state.basket]
-
       const index = state.basket.findIndex((basketItem) => basketItem.id === action.id);
 
       if (index >= 0) {

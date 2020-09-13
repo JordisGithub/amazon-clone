@@ -41,11 +41,11 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <Header />
+        {/* <Header /> */}
         <Switch>
 
           <Route path="/checkout">
-            {/* <Header /> */}
+            <Header />
             <Checkout />
           </Route>
 
@@ -54,7 +54,7 @@ function App() {
           </Route>
 
           <Route path="/">
-            {/* <Header /> */}
+            <Header />
             <Home />
           </Route>
 
