@@ -1,9 +1,11 @@
-import React from 'react'
+// import React from 'react'
 import { useStateValue } from "../../Services/StateProvider"
 import "./Checkout.css"
 import CheckoutProduct from "../CheckoutProduct/CheckoutProduct"
 import Subtotal from "../Subtotal/Subtotal"
-import CurrencyFormat from "react-currency-format"
+// import CurrencyFormat from "react-currency-format"
+import React, { forwardRef } from 'react';
+// import FlipMove from 'react-flip-move';
 
 function Checkout() {
   const [{ basket }] = useStateValue();
@@ -24,6 +26,7 @@ function Checkout() {
             <div>
               <h2 className="checkout_title">Your Shopping Basket</h2>
               {/* list all the checkout products */}
+
               {basket?.map((item) => (
                 <CheckoutProduct
                   id={item.id}
@@ -33,6 +36,7 @@ function Checkout() {
                   rating={item.rating}
                 />
               ))}
+
             </div>
           )}
 

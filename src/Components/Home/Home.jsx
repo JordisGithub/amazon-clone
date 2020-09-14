@@ -7,10 +7,17 @@ function Home() {
     <div className="home">
       <img
         className="home__image"
-        src="
-     https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220.jpg"
+        src="https://i.imgur.com/i1PbnhC.jpg"
+        //     src="
+        //  https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220.jpg"
         alt=""
       />
+
+      <div className="hero__text">
+        <h1>Jordi's Clean Beauty Boutique</h1>
+        <p>The Best Sustainable Makeup At Your Fingertips</p>
+        <button>Shop The Fall Edit</button>
+      </div>
 
       {/* product id, title, price, rating, image */}
       <div className="home__row home__row__two">

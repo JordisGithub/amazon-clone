@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+
+
 .home {
   max-width: 1500px;
   margin-left: auto;
@@ -13,9 +16,44 @@
 
 .home__image {
   width: 100%;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .3));
   z-index: -1;
-  margin-bottom: -150px;
+  margin-bottom: -20px;
+}
+
+.hero__text h1,
+.hero__text p,
+.hero__text button {
+  /* border: solid red 2pt; */
+  display: flex;
+  position: relative;
+  justify-content: center;
+  z-index: 2;
+}
+
+.hero__text h1 {
+  margin-top: -85px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40pt;
+
+}
+
+.hero__text p {
+  font-family: 'Open Sans', sans-serif;
+  margin: 5pt 0 10px;
+  font-size: 14pt;
+
+}
+
+.hero__text button {
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  margin-bottom: 40px;
+  padding: 5pt;
+  background-color: #488214;
+  color: white;
+  font-weight: 800;
+
 }
 
 /* ====================================== */
